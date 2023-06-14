@@ -12,14 +12,14 @@ export default function Card(props) {
                         <hr />
                         <div className="d-flex">
                             <button type="button" className="btn btn-primary">Update</button>
-                            <button data-bs-toggle="modal" data-bs-target="#exampleModal" typ="button" className="btn btn-warning ms-auto">Delete</button>
+                            <button data-bs-toggle="modal" data-bs-target={'#'+ bookId} typ="button" className="btn btn-warning ms-auto">Delete</button>
                         </div>
                     </div>
                 </div>
             </div>
 
 
-            <div className="modal fade" id="exampleModal"  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div className="modal fade" id={bookId}  role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div className="modal-dialog" role="document">
                     <div className="modal-content">
                         <div className="modal-header">

@@ -21,7 +21,7 @@ export default function Home() {
         {
           bookList.map((book, key) => {
             return (
-              <div className="col-md-4" key={key}>
+              <div className="col-md-4 mt-4" key={key}>
                 <Card {...book} />
               </div>
             )
