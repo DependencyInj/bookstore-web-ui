@@ -19,10 +19,10 @@ export default function Home() {
     <div className="container">
       <div className="row">
         {
-          bookList.map((book, key) => {
+          bookList?.map((book, key) => {
             return (
-              <div className="col-md-4 mt-4" key={key}>
-                <Card {...book} />
+              <div className="col-md-4 mt-4 mb-4" key={key}>
+                <Card getAllBooks={getAllBooks} {...book} />
               </div>
             )
           })

@@ -9,5 +9,14 @@ export async function getRequest(url){
     .then(response => response)
     .catch(error => console.log(error));
 
-    return resp.data;
+    return resp?.data;
+}
+
+export async function deleteBook(url, id){
+    const data =  {"bookId": id};
+
+    await axiosClient.post(url, data)
+    .then(response => response)
+    .catch(error => console.log(error));
+
 }
